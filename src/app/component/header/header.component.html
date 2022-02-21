@@ -1,0 +1,88 @@
+
+<div class="home" id="home">
+    <!-- background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.webp'); -->
+   <header>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-red">
+       <div class="container-fluid">
+         <button
+           class="navbar-toggler"
+           type="button"
+           data-mdb-toggle="collapse"
+           data-mdb-target="#navbarExample01"
+           aria-controls="navbarExample01"
+           aria-expanded="false"
+           aria-label="Toggle navigation"
+         >
+           <i class="fas fa-bars"></i>
+         </button>
+         <div class="collapse navbar-collapse justify-content-center text-uppercase" id="navbarExample01">
+           <ul class="navbar-nav  mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link {{activeHome ? 'active-link' : ''}}" aria-current="page" href="#home" (click)="activeLink(enumMenuLink.HOME)">Acceuil</a>
+             </li>
+             <!-- <li class="nav-item">
+               <a class="nav-link" href="#a-propos">à propos</a>
+             </li> -->
+             <li class="nav-item">
+               <a class="nav-link {{activeExperience ? 'active-link' : ''}}" href="#experience" (click)="activeLink(enumMenuLink.EXPERIENCES)">Expériences</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link {{activeProject ? 'active-link' : ''}}" href="#project" (click)="activeLink(enumMenuLink.PROJECTS)">Projets</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link {{activeSkill ? 'active-link' : ''}}" href="#skill" (click)="activeLink(enumMenuLink.SKILLS)">Compétences</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link {{activeFormation ? 'active-link' : ''}}" href="#formation" (click)="activeLink(enumMenuLink.FORMATIONS)">Formations</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+     <!-- Navbar -->
+
+     <!-- Background image -->
+     <div class="p-5 text-center" >
+       <div class="mask" >
+         <div class="d-flex justify-content-center align-items-center h-100">
+           <div class="text-white">
+             <img width="150"  class="img-fluid rounded-circle zoom img-color" src="../assets/pascob.png" alt="Photo de Pascal">
+             <br>
+             <br>
+             <h1 class="display-1">KABORE Pascal</h1>
+             <!-- <ngx-typed-js
+               [strings]="['Ingénieur de Systèmes d\'Information.', 'Développeur Full Stack.', 'Consultant.']"
+               [shuffle]="true"
+               [typeSpeed]="30"
+               [backSpeed]="5"
+               [loop]="true"
+               [fadeOut]="false"
+               >
+               <hr>
+               <h3 class="typing"></h3>
+               <hr>
+             </ngx-typed-js> -->
+             <!-- [attr]="'placeholder'" <input  type="text" disabled> -->
+             <br>
+             <br>
+             <a href="https://www.linkedin.com/in/pascal-kabore-561872183/" title="Compte linkedin" target="_blank" class="btn btn-outline-primary btn-lg"> <i class="fab fa-linkedin fa-2x"></i></a>&#160; &#160;
+             <a href="https://github.com/Pascob" target="_blank" class="btn btn-outline-dark btn-lg" title="Compte github"><i class="fab fa-github fa-2x"></i></a> &#160; &#160;
+             <a  class="btn btn-outline-warning btn-lg" title="Compte gitlab"><i class="fab fa-gitlab fa-2x"></i></a> &#160; &#160;
+             <a href="https://www.facebook.com/pascal.pascob" target="_blank" class="btn btn-outline-primary btn-lg" title="Compte facebook"><i class="fab fa-facebook fa-2x"></i></a>
+             <br><br><br>
+             <a class="btn btn-outline-warning btn-lg" href="mailto:pascob.pk@gmail.com" role="button">
+               <i class="fas fa-envelope"></i>  &#160;
+               Me contacter
+             </a>  &#160;
+             <!-- <a class="btn btn-outline-warning btn-lg" href="#!" role="button">
+               <i class="fas fa-file"></i> &#160;
+               Télécharger le CV
+             </a> -->
+           </div>
+         </div>
+       </div>
+     </div>
+   </header>
+
+ </div>

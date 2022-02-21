@@ -1,0 +1,39 @@
+nav{
+    background-color: #545454;
+    border-bottom: 3px solid #ffa900;
+    height: 90px;
+    font-size: medium;
+    font-family: cursive;
+}
+
+.home {
+    background-color: #545454;
+    height: 100vh;
+}
+
+nav ul a {
+    color: white;
+    padding-right: 30px;
+    letter-spacing: 2px;
+}
+
+nav ul a:hover{
+    color: white;
+    /*text-decoration: #ffa900 solid underline;*/
+    border-bottom: 2px solid #ffa900;
+}
+
+/*nav ul a:active{*/
+/*    color: white;*/
+/*    text-decoration: #ffa900 solid underline;*/
+/*}*/
+
+.img-color{
+    border-top: 5px solid #ffa900;
+    border-bottom: 5px solid #ffa900;
+}
+
+.active-link{
+  color: white;
+  border-bottom: 2px solid #ffa900;
+}
