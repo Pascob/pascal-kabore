@@ -5,7 +5,7 @@
      <!-- Navbar -->
      <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-red">
        <div class="container-fluid">
-         <button
+         <!--<button
            class="navbar-toggler"
            type="button"
            data-mdb-toggle="collapse"
@@ -21,9 +21,9 @@
              <li class="nav-item">
                <a class="nav-link {{activeHome ? 'active-link' : ''}}" aria-current="page" href="#home" (click)="activeLink(enumMenuLink.HOME)">Acceuil</a>
              </li>
-             <!-- <li class="nav-item">
+             &lt;!&ndash; <li class="nav-item">
                <a class="nav-link" href="#a-propos">à propos</a>
-             </li> -->
+             </li> &ndash;&gt;
              <li class="nav-item">
                <a class="nav-link {{activeExperience ? 'active-link' : ''}}" href="#experience" (click)="activeLink(enumMenuLink.EXPERIENCES)">Expériences</a>
              </li>
@@ -37,7 +37,7 @@
                <a class="nav-link {{activeFormation ? 'active-link' : ''}}" href="#formation" (click)="activeLink(enumMenuLink.FORMATIONS)">Formations</a>
              </li>
            </ul>
-         </div>
+         </div>-->
        </div>
      </nav>
      <!-- Navbar -->
@@ -51,38 +51,39 @@
              <br>
              <br>
              <h1 class="display-1">KABORE Pascal</h1>
-             <!-- <ngx-typed-js
-               [strings]="['Ingénieur de Systèmes d\'Information.', 'Développeur Full Stack.', 'Consultant.']"
+              <ngx-typed-js
+               [strings]="[toFrontUpperCase('Ingénieur Système d\'Information.'), toFrontUpperCase('Développeur Full Stack.'), toFrontUpperCase('Consultant.')]"
                [shuffle]="true"
-               [typeSpeed]="30"
-               [backSpeed]="5"
+               [typeSpeed]="40"
+               [backSpeed]="7"
                [loop]="true"
                [fadeOut]="false"
                >
                <hr>
-               <h3 class="typing"></h3>
+               <h2 class="typing"></h2>
                <hr>
-             </ngx-typed-js> -->
-             <!-- [attr]="'placeholder'" <input  type="text" disabled> -->
+             </ngx-typed-js>
+
              <br>
              <br>
              <a href="https://www.linkedin.com/in/pascal-kabore-561872183/" title="Compte linkedin" target="_blank" class="btn btn-outline-primary btn-lg"> <i class="fab fa-linkedin fa-2x"></i></a>&#160; &#160;
              <a href="https://github.com/Pascob" target="_blank" class="btn btn-outline-dark btn-lg" title="Compte github"><i class="fab fa-github fa-2x"></i></a> &#160; &#160;
-             <a  class="btn btn-outline-warning btn-lg" title="Compte gitlab"><i class="fab fa-gitlab fa-2x"></i></a> &#160; &#160;
+             <a  class="btn btn-outline-warning btn-lg" href="https://gitlab.com/Pascob" title="Compte gitlab"><i class="fab fa-gitlab fa-2x"></i></a> &#160; &#160;
              <a href="https://www.facebook.com/pascal.pascob" target="_blank" class="btn btn-outline-primary btn-lg" title="Compte facebook"><i class="fab fa-facebook fa-2x"></i></a>
              <br><br><br>
              <a class="btn btn-outline-warning btn-lg" href="mailto:pascob.pk@gmail.com" role="button">
                <i class="fas fa-envelope"></i>  &#160;
                Me contacter
              </a>  &#160;
-             <!-- <a class="btn btn-outline-warning btn-lg" href="#!" role="button">
-               <i class="fas fa-file"></i> &#160;
-               Télécharger le CV
-             </a> -->
+              <a class="btn btn-outline-warning btn-lg" target="_blank" href="../assets/CV_KABORE_Pascal.pdf" role="button">
+               <i class="fas fa-download"></i> &#160;
+               Télécharger CV
+             </a>
            </div>
          </div>
        </div>
      </div>
    </header>
+  <div id="particles-js"></div>
 
  </div>

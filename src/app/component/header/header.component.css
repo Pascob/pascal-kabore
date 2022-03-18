@@ -11,7 +11,7 @@ nav{
     height: 100vh;
 }
 
-nav ul a {
+nav ul a, .font-capital {
     color: white;
     padding-right: 30px;
     letter-spacing: 2px;

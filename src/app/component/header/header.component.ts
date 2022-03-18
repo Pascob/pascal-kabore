@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ParticlesConfig } from '../../../../node_modules/particles.js';
 
 enum Menu{
   HOME,
@@ -9,6 +8,7 @@ enum Menu{
   FORMATIONS
 }
 declare var particlesJS: any;
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -24,11 +24,9 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-     // https://vincentgarreau.com/particles.js/
-    //  particlesJS('home-', ParticlesConfig, function() {
-    //     console.log('callback - particles.js config loaded');
-    //     alert("9296");
-    // });
+    particlesJS.load('particles-js', 'assets/particle.json', function() {
+      console.log('callback - particles-js config loaded');
+    });
   }
 
   activeLink(link: Menu): void {
@@ -54,5 +52,8 @@ export class HeaderComponent implements OnInit {
         this.activeSkill = true;
         break;
     }
+  }
+  toFrontUpperCase(name: string): string{
+    return name.toUpperCase();
   }
 }

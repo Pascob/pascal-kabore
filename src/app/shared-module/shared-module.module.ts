@@ -24,7 +24,7 @@ import { PkSkillsComponent } from './pk-skills/pk-skills.component';
 import { PkFormationComponent } from './pk-formation/pk-formation.component';
 import {NgbRatingModule} from '@ng-bootstrap/ng-bootstrap';
 import { PkSkillRatingComponent } from './pk-skill-rating/pk-skill-rating.component';
-
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -35,27 +35,28 @@ import { PkSkillRatingComponent } from './pk-skill-rating/pk-skill-rating.compon
     PkSkillsComponent,
     PkFormationComponent
   ],
-  imports: [
-    CommonModule,
-    MdbAccordionModule,
-    MdbCarouselModule,
-    MdbCheckboxModule,
-    MdbCollapseModule,
-    MdbDropdownModule,
-    MdbFormsModule,
-    MdbModalModule,
-    MdbPopoverModule,
-    MdbRadioModule,
-    MdbRangeModule,
-    MdbRippleModule,
-    MdbScrollspyModule,
-    MdbTabsModule,
-    MdbTooltipModule,
-    MdbValidationModule,
-    MatTooltipModule,
-    MatChipsModule,
-    MatProgressBarModule,
-    NgbRatingModule,
-  ]
+    imports: [
+        CommonModule,
+        MdbAccordionModule,
+        MdbCarouselModule,
+        MdbCheckboxModule,
+        MdbCollapseModule,
+        MdbDropdownModule,
+        MdbFormsModule,
+        MdbModalModule,
+        MdbPopoverModule,
+        MdbRadioModule,
+        MdbRangeModule,
+        MdbRippleModule,
+        MdbScrollspyModule,
+        MdbTabsModule,
+        MdbTooltipModule,
+        MdbValidationModule,
+        MatTooltipModule,
+        MatChipsModule,
+        MatProgressBarModule,
+        NgbRatingModule,
+        MatCardModule,
+    ]
 })
 export class SharedModuleModule { }
