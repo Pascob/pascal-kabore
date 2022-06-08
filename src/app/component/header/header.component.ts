@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   activeProject = false;
   activeFormation = false;
   enumMenuLink = Menu;
+  urlToCV = 'https://www.canva.com/design/DAEjoNVqYZQ/Znv2ZUs9PEW056PV6yT_eQ/view?utm_content=DAEjoNVqYZQ&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu';
   constructor() { }
 
   ngOnInit(): void {
