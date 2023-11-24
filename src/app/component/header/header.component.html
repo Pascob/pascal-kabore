@@ -3,7 +3,7 @@
     <!-- background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.webp'); -->
    <header>
      <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-red">
+     <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-red mb-2">
        <div class="container-fluid">
          <!--<button
            class="navbar-toggler"
@@ -47,12 +47,18 @@
        <div class="mask" >
          <div class="d-flex justify-content-center align-items-center h-100">
            <div class="text-white">
-             <img width="150"  class="img-fluid rounded-circle zoom img-color" src="../assets/pascob.png" alt="Photo de Pascal">
+             <img width="175" height="175"  class="mt-2 rounded-circle img-color" src="../assets/photo_cv-removebg-preview.png" alt="Photo de Pascal">
              <br>
              <br>
-             <h1 class="display-1">KABORE Pascal</h1>
+             <h1 class="display-1">Pascal KABORE</h1>
+             <div class="mt-4">
               <ngx-typed-js
-               [strings]="[toFrontUpperCase('Ingénieur Système d\'Information.'), toFrontUpperCase('Développeur Full Stack.'), toFrontUpperCase('Consultant.')]"
+               [strings]="[
+                          toFrontUpperCase('Responsable TIC / ICT Manager'), 
+                          toFrontUpperCase('Ingénieur Système d\'Information / Information Systems Engineer'), 
+                          toFrontUpperCase('Développeur Full Stack / Full Stack Developer'), 
+                          toFrontUpperCase('Consultant.')
+                        ]"
                [shuffle]="true"
                [typeSpeed]="40"
                [backSpeed]="7"
@@ -63,20 +69,24 @@
                <h2 class="typing"></h2>
                <hr>
              </ngx-typed-js>
+             </div>
+              
 
              <br>
              <br>
-             <a href="https://www.linkedin.com/in/pascal-kabore-561872183/" title="Compte linkedin" target="_blank" class="btn btn-outline-primary btn-lg"> <i class="fab fa-linkedin fa-2x"></i></a>&#160; &#160;
-             <a href="https://github.com/Pascob" target="_blank" class="btn btn-outline-dark btn-lg" title="Compte github"><i class="fab fa-github fa-2x"></i></a> &#160; &#160;
-             <a  class="btn btn-outline-warning btn-lg" target="_blank" href="https://gitlab.com/Pascob" title="Compte gitlab"><i class="fab fa-gitlab fa-2x"></i></a> &#160; &#160;
-             <a href="https://www.facebook.com/pascal.pascob" target="_blank" class="btn btn-outline-primary btn-lg" title="Compte facebook"><i class="fab fa-facebook fa-2x"></i></a>
+             <div >
+                  <a href="https://www.linkedin.com/in/pascal-kabore-561872183/" title="Compte linkedin" target="_blank" class="btn btn-outline-primary btn-lg mr-2 mb-2"> <i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/Pascob" target="_blank" class="btn btn-outline-dark btn-lg mr-2 mb-2" title="Compte github"><i class="fab fa-github fa-2x"></i></a>
+                <a  class="btn btn-outline-warning btn-lg mr-2 mb-2" target="_blank" href="https://gitlab.com/Pascob" title="Compte gitlab"><i class="fab fa-gitlab fa-2x"></i></a>
+                <a href="https://www.facebook.com/pascal.pascob" target="_blank" class="btn btn-outline-primary btn-lg mb-2" title="Compte facebook"><i class="fab fa-facebook fa-2x"></i></a>
+             </div>
              <br><br><br>
-             <a class="btn btn-outline-warning btn-lg" href="mailto:pascob.pk@gmail.com" role="button">
-               <i class="fas fa-envelope"></i>  &#160;
+             <a class="btn btn-outline-warning btn-lg mr-2 mb-2" href="mailto:pascob.pk@gmail.com" role="button">
+               <i class="fas fa-envelope mr-1"></i> 
                Me contacter
-             </a>  &#160;
-              <a class="btn btn-outline-warning btn-lg" target="_blank" href="{{urlToCV}}" role="button">
-               <i class="fas fa-download"></i> &#160;
+             </a>
+              <a class="btn btn-outline-warning btn-lg mb-2" target="_blank" href="{{urlToCV}}" role="button">
+               <i class="fas fa-download mr-1"></i>
                Télécharger CV
              </a>
            </div>

@@ -22,6 +22,14 @@ export class HeaderComponent implements OnInit {
   activeFormation = false;
   enumMenuLink = Menu;
   urlToCV = 'https://www.canva.com/design/DAEjoNVqYZQ/Znv2ZUs9PEW056PV6yT_eQ/view?utm_content=DAEjoNVqYZQ&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu';
+  
+  arraySkills = [
+    'Responsable TIC / ICT Manager'.toUpperCase, 
+    'Ingénieur Système d\'Information / Information Systems Engineer'.toUpperCase, 
+    'Développeur Full Stack / Full Stack Developer'.toUpperCase, 
+    'Consultant.'.toUpperCase
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
